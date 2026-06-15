@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elearning Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Google Fonts -->
+  <style>
+    /* Navbar Styling */
+    /* Navbar Custom Colors */
+    .navbar {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      /* same gradient as heading */
+      padding: 20px 20px;
+      position: fixed;
+      z-index: 1000;
+      font-size: 18px;
+      min-height: 80px;
+      
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: #fff !important;
+      /* white text */
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ffd700 !important;
+      /* gold hover color */
+    }
+
+    .navbar-toggler {
+      border-color: #fff;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    body {
+      background: linear-gradient(135deg);
+      min-height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .login-card {
+      background: fixed;
+      border-radius: 20px;
+      box-shadow: 8px 25px;
+      padding: 2rem;
+      width: 100%;
+      max-width: 450px;
+      margin-top: 100px;
+
+    }
+
+    .login-card h2 {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: brown;
+      text-align: center;
+
+    }
+
+    .btn-custom {
+      background-color: azure;
+      color: brown;
+      border-radius: 10px;
+      transition: 0.35;
+    }
+
+    .btn-custom:hover {
+      background-color: azure;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Navbaar start-->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <div class="container-fluid"></div>
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <p class="m-0 fw-bold" style="font-size: 25px;">
+        <img src="img/icon.png" alt="" height="50px">Secret<span style="color: #fb873f;">Coder</span>
+      </p>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="about.html" class="nav-item nav-link">About</a>
+        <a href="courses.html" class="nav-item nav-link">Courses</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+          <div class="dropdown-menu fade-down m-0">
+            <a href="team.html" class="dropdown-item">Our Team</a>
+            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-item nav-link">Contact</a>
+        <a href="login.html" class="nav-item nav-link"><i class="fa fa-user"></i></a>
+        <a href="#" class="nav-item nav-link">
+
+          <div id="google_translate_element"></div>
+
+
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!--Navbaar End-->
+
+
+
+  <div class="login-card">
+    <h2>E-Learning Login</h2>
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter your password" />
+      </div>
+      <button type="submit" class="btn btn-custom w-100">Login</button>
+      <div class="text-center mt-3">
+        <a href="#">Forgot Password?</a> | <a href="#">Sign Up</a>
+      </div>
+    </form>
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
+</html>
